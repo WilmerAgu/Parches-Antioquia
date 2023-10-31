@@ -1,5 +1,5 @@
 :root {
-    --primario: #9868dc;
+    --primario: #1bab52;
     --blanco: #ffffff;
     --fuentetitulos:'Young Serif', serif; 
     --fuenteparrafos: 'Raleway', sans-serif; 
@@ -14,7 +14,7 @@ html{
     box-sizing: inherit;
 }
 body{
-    font-size: 16px;/* 1 rem = 10px*/
+    font-size: 16px;
     font-family: 'Raleway', sans-serif;
     
 }
@@ -46,18 +46,17 @@ p {
     background-image: url(../img/impprincipal.avif);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 250px;
-    /* padding: 20rem; */
+    height: 450px;
     position: relative; 
     
 }
 .contenido-hero {
     
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
     height: 100%;
-    display: flex;
+    display: flex; 
     /*alinear vertical y horizontalmente*/
     flex-direction: column;
     align-items: center;
@@ -100,3 +99,119 @@ p {
     background-color: var(--blanco);
     color: var(--primario);
 }
+
+
+/* pagina Daniel*/
+
+.html, .body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.html {
+  font: 1em/1.5 "Lato", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+}
+
+.header {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-image:url(../img/PARCHE-ANTIOQUIA.jpg);
+  background-size: cover;
+}
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.h1 {
+  margin: 0;
+}
+.header  {
+  text-transform: uppercase;
+  margin-top: -.5em;
+}
+ .header .hgroup {
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  display: inline-block;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  border: 5px solid #fff;
+  padding: .5em 3em;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background:#333 center no-repeat;
+  background-size: cover;
+  z-index: 0;
+  opacity: 0;  -webkit-filter: blur(4px);
+}
+.img{
+  margin-right:20px
+}
+.site {
+  padding: 20em 0;
+  text-align: center;
+  background-color: #efefef;
+  font-size: .8em;
+  color: #444;
+  position:relative
+}
+.site a {
+  color: #666;
+  text-decoration: none;
+}
+.site a:hover {
+  color: #222;
+}
+
+.site nav{
+  position:absolute;
+  top:0;
+  left:0;
+  background:#222;
+  width:100%
+}
+.site nav a{
+  padding:10px 30px;
+  font-size:1.3em;
+  display:inline-block
+}
+.site nav a:hover{
+  background:#58ca74;
+  color:#fff
+}
+.slider {
+    display: flex;
+    width: auto;
+    height: auto;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .slider  {
+    flex: 0 0 auto;
+    width: auto;
+    object-fit: cover;
+    scroll-snap-align: center;
+  }
