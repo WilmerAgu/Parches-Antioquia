@@ -41,6 +41,7 @@ p {
 	text-align: center;
 }
 
+
 /*backgraun imagen*/
 .hero {
     background-image: url(../img/impprincipal.avif);
@@ -187,6 +188,7 @@ p {
 
 .site nav{
   position:absolute;
+	overflow: hidden;
   top:0;
   left:0;
   background:#222;
