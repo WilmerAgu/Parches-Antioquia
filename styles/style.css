@@ -125,10 +125,19 @@ p {
   font-family: var(--fuenteparrafos);
 }
 .btn-videos {
-  color: var(--blanco);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--primario);
   padding: 1rem;
-  border: .5rem;
+  border-radius: 1rem;
+  margin-left: 25%;
+  margin-right: 25%;  
+}
+.btn-videos a {
+  color: var(--blanco);
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 /* pagina Daniel*/
