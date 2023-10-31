@@ -46,7 +46,7 @@ p {
     background-image: url(../img/impprincipal.avif);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 450px;
+    height: 500px;
     position: relative; 
     
 }
@@ -104,11 +104,32 @@ p {
     border-radius: 25px;
 }
 /* videos*/
-.vcnt-videos {
-  display: grid;
-  
-}
 
+@media (min-width: 768px) {
+  .ctn-videos {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto auto;
+      column-gap: 4rem;
+      margin-top: 4rem;
+  }  
+}
+.ctn-video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ctn-video  p {
+  line-height: 2;
+  text-align: center;
+  font-family: var(--fuenteparrafos);
+}
+.btn-videos {
+  color: var(--blanco);
+  background-color: var(--primario);
+  padding: 1rem;
+  border: .5rem;
+}
 
 /* pagina Daniel*/
 
