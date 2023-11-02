@@ -256,3 +256,55 @@ p {
     object-fit: cover;
     scroll-snap-align: center;
   }
+
+
+  Estilos para el mosaico */
+    .mosaic {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 columnas, puedes ajustar según sea necesario */
+      grid-gap: 20px; /* Espacio entre las imágenes */
+    }
+
+    /* Estilos para cada elemento del mosaico */
+    .mosaic-item {
+      position: relative;
+    }
+
+    .mosaic-item img {
+      width: 60%;
+      height: auto;
+      display: block;
+    }
+
+    .mosaic-item .text-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 30%;
+      height: 30%;
+      background: rgba(248, 248, 248, 0.7); /* Fondo semitransparente para el texto */
+      color: rgba(154, 19, 172, 0.664), 255, 255);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .mosaic-item:hover .text-overlay {
+      opacity: 1; /* Mostrar el texto al pasar el cursor por encima */
+    }
+
+    /* Estilos para el texto */
+    .text-overlay h2 {
+      font-size: 24px;
+      margin: 0;
+    }
+
+    .text-overlay p {
+      font-size: 16px;
+      margin: 0;
+    }
+
+    
