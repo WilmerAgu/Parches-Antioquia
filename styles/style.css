@@ -172,6 +172,7 @@ p {
 }
 .h1 {
   margin: 0;
+  
 }
 .header  {
   text-transform: uppercase;
@@ -188,10 +189,10 @@ p {
   position: absolute;
   top: 50%;
   left: 50%;
-  color: #fff;
+  color: #ffffff;
   border: 5px solid #fff;
   padding: .5em 3em;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(37, 146, 119, 0.767);
   z-index: 2;
 }
 .overlay {
@@ -200,7 +201,7 @@ p {
   right: 0;
   left: 0;
   bottom: 0;
-  background:#333 center no-repeat;
+  background:#080808 center no-repeat;
   background-size: cover;
   z-index: 0;
   opacity: 0;  -webkit-filter: blur(4px);
@@ -213,22 +214,23 @@ p {
   text-align: center;
   background-color: #efefef;
   font-size: .8em;
-  color: #444;
+  color: #eee7e7;
   position:relative
 }
 .site a {
-  color: #666;
-  text-decoration: none;
+  background-color: var(--blanco);
+  color: var(--primario);
+  border-radius: 25px;
 }
 .site a:hover {
-  color: #222;
+  color: #070707;
 }
 
 .site nav{
   position:absolute;
   top:0;
   left:0;
-  background:#222;
+  background: rgba(37, 146, 119, 0.767);
   width:100%
 }
 .site nav a{
@@ -237,20 +239,27 @@ p {
   display:inline-block
 }
 .site nav a:hover{
-  background:#58ca74;
+  background:#81c046;
   color:#fff
 }
 .slider {
     display: flex;
-    width: auto;
-    height: auto;
+    width: 500px;
+    height: 500px;
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
   }
   
   .slider  {
     flex: 0 0 auto;
-    width: auto;
+    width: 100%;
     object-fit: cover;
     scroll-snap-align: center;
+  }
+  .titu {
+    background-color: #070707;
+  }
+  .text {
+  
+    color: #070707;
   }
