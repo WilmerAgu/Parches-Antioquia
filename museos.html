@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Museos</title>
-    <link rel="stylesheet"type="text/css" href="./styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+    crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="index.html">
+    <link rel="stylesheet"type="text/css" href="./styles/style.css">
     
 </head>
 <body class="body">
@@ -28,54 +32,38 @@
           <a href="">C.COMERCIALES</a>
           <a href="">PARQUES</a>
           <a href="/index.html">INICIO</a>
-        </nav>
-        <HEader class="titu">
-        <h2>MUSEOS</h2>
-      </HEader>
-            <div class="slider">
-                <div class="slide">
-                    <img class="img" src="./img/museo-de-antioquia1.jpg" alt="museo-de-antioquia" width="700px">
-                    <div class="text">Museo-de-antioquia</div>
-                </div>
-                <div class="slide">
-                    <img class="img" src="./img/vehiculos-utilizados2.jpg" alt="useo-de-Plablo" width="700px" height="400">
-                    <div class="text">Museo de Plablo</div>
-                </div>
-                <div class="slide">
-                    <img class="img" src="./img/planetario-de-medellin3.jpg" alt="planetario-de-medellin" width="700px" height="400">
-                    <div class="text">planetario-de-medellin</div>
-                </div>
-            </div>
-            </div>
-        
+        </nav>   
       </section>
-      <br>
-      <main class="container">
-        <div class="ctn-videos">
-            <section class="cnt-video">
-                <h2>La Piedra del Peñol</h2>
-                <video src="./videos/piedradelpeñol.mp4" width="600px" autoplay muted controls></video>
-                <p>Con 220 metros de altura, es uno de los destinos turísticos predilectos para viajeros 
-                    nacionales e internacionales, pues su belleza natural y su contexto geográfico lo hacen 
-                    un espacio hermoso y tranquilo, lejos fuera de las grandes ciudades. Además, cuenta con 715 
-                    escalones que permiten el ascenso de los turistas hasta la parte superior.</p>
-                <div class="btn-videos">
-                    <a href="#"><imput>Conoce Más</imput></a>
-                </div>
-            </section>
-            <section class="cnt-video">
-                <h2>Parque Arví</h2>
-                <video src="./videos/parquearvi.mp4"width="600px" autoplay muted controls></video>
-                <p>El Parque Arví cuenta con 16.000 hectáreas, ofreciendo así, un espacio natural significativo, 
-                    en el que exalta las potencialidades y fortalezas del sector en el que se encuentra. Ofrece la 
-                    posibilidad de descubrir la magia de su riqueza cultural, ambiental, el emprendimiento de su 
-                    gente y su patrimonio arqueológico. Por medio de una propuesta de turismo ecológico, natural 
-                    y sostenible, sitúa en un mismo lugar grandes atributos de la ciudad.</p>
-                <div class="btn-videos">
-                    <a href="#"><imput>Conoce Más</imput></a>
-                </div>
-            
-            </section>
+      
+      <div class="container">
+
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/impprincipal.avif" class="d-block w-100" alt="250px">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/PARCHE2.jpg" class="d-block w-100" alt="250px">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/PARCHE2.jpg" class="d-block w-100" alt="250px">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
       <script src="museo.js" charset="UTF-8"></script>
 </body>
 </html>
