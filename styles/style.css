@@ -1,5 +1,5 @@
 :root {
-    --primario: #1bab52;
+    --primario: #038033;
     --blanco: #ffffff;
     --fuentetitulos:'Young Serif', serif; 
     --fuenteparrafos: 'Raleway', sans-serif; 
@@ -160,6 +160,7 @@ p {
   border-radius: 1rem;
   margin-left: 25%;
   margin-right: 25%;
+  
 }
 .btn-videos a {
   color: var(--blanco);
@@ -186,6 +187,34 @@ p {
 .footer-ppl p {
   font-size: 1.2rem;
 }
+/* pagina de parques*/
+.bg-parques {
+  background-image: url(../img/img-parques-graffiti.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  position: relative; 
+}
+.ctn-bg-parques {    
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.nav-parques {
+  background-color: rgb(252, 114, 2);
+  text-decoration: none;
+}
+.nav-ppl a:hover {
+  color: rgb(255, 94, 0);
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 40%;
+      margin: auto;
+  }
+
 
 /* pagina Daniel*/
 
