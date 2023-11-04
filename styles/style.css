@@ -129,16 +129,6 @@ p {
   justify-content: center;
   align-items: center;
 }
-/* footer pagina de inicio */
-.footer-ppl {
-  background-color: var(--primario);
-  padding: 1rem;
-  margin-top: 15rem;
-  color: var(--blanco);
-
-}
-
-
 /* videos*/
 
 @media (min-width: 768px) {
@@ -169,12 +159,32 @@ p {
   padding: 1rem;
   border-radius: 1rem;
   margin-left: 25%;
-  margin-right: 25%;  
+  margin-right: 25%;
 }
 .btn-videos a {
   color: var(--blanco);
   text-decoration: none;
   text-transform: uppercase;
+}
+
+/* footer pagina de inicio */
+.footer-ppl {
+  background-color: #045824;
+  padding: 1rem;
+  margin-top: 8rem;
+  color: var(--blanco);
+  text-transform: uppercase;
+  
+}
+
+.ctn-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.footer-ppl p {
+  font-size: 1.2rem;
 }
 
 /* pagina Daniel*/
@@ -207,6 +217,7 @@ p {
   border-radius: 1rem;
   margin-left: 25%;
   margin-right: 25%;  
+  
 }
 .btn-img a {
   color: var(--blanco);
