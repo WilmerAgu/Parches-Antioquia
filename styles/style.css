@@ -259,4 +259,50 @@ p {
 
   /*página rios y cascadas*/
 
- 
+ .enryc{
+  background-image: url(../img/imagen1ryc.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  position: relative; 
+  color: #fff;
+  text-align: center;
+  }
+
+  .introryc{
+    padding: 100px 0;
+    background-color: white;
+    position: relative;
+  }
+
+  .cont1ryc{
+    text-align: center;
+    line-height: 20px;
+    color: black;
+    }
+
+    .ryc-group{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 50px;
+      padding: 1rem;
+    }
+
+    .ryc-1{
+      padding: 0 25px;
+    }
+    
+    .ryc-1 img{
+      display: block;
+      width: 150px;
+      height: 150px;
+      object-position: center;
+      margin: auto;
+      border-radius: 40%;
+    }
+.ryc-1 h3{
+  margin-bottom: 15px;
+}
+
+
+
