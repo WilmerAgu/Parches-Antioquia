@@ -1,5 +1,5 @@
 :root {
-    --primario: #1bab52;
+    --primario: #038033;
     --blanco: #ffffff;
     --fuentetitulos:'Young Serif', serif; 
     --fuenteparrafos: 'Raleway', sans-serif; 
@@ -104,6 +104,31 @@ p {
     color: var(--primario);
     border-radius: 25px;
 }
+/* imagenes pagina de inicio*/
+@media (min-width: 768px) {
+  .servicios {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto auto auto;
+      column-gap: 2rem;
+  }
+  
+}
+.servicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.servicio .imag {
+  height: 15rem;
+  width: 15rem;
+  background-color: var(--primario);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /* videos*/
 
 @media (min-width: 768px) {
@@ -113,6 +138,7 @@ p {
       grid-template-rows: auto auto auto;
       column-gap: 4rem;
       margin-top: 4rem;
+      margin-bottom: 10rem;
   }  
 }
 .ctn-video {
@@ -133,7 +159,8 @@ p {
   padding: 1rem;
   border-radius: 1rem;
   margin-left: 25%;
-  margin-right: 25%;  
+  margin-right: 25%;
+  
 }
 .btn-videos a {
   color: var(--blanco);
@@ -141,88 +168,95 @@ p {
   text-transform: uppercase;
 }
 
-/* pagina Daniel*/
-
-.html, .body {
-  padding: 0;
-  margin: 0;
-  height: 100%;
-}
-
-.html {
-  font: 1em/1.5 "Lato", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizelegibility;
-}
-
-.header {
-  height: 100%;
-  position: relative;
-  overflow: hidden;
-  background-image:url(../img/PARCHE-ANTIOQUIA.jpg);
-  background-size: cover;
-}
-.content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
-}
-.h1 {
-  margin: 0;
-}
-.header  {
+/* footer pagina de inicio */
+.footer-ppl {
+  background-color: #045824;
+  padding: 1rem;
+  margin-top: 8rem;
+  color: var(--blanco);
   text-transform: uppercase;
-  margin-top: -.5em;
+  
 }
- .header .hgroup {
-  -webkit-transform: translate(-50%, -50%);
-  -moz-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  display: inline-block;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  color: #fff;
-  border: 5px solid #fff;
-  padding: .5em 3em;
-  background-color: rgba(0, 0, 0, 0.2);
-  z-index: 2;
+
+.ctn-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
 }
-.overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  background:#333 center no-repeat;
+
+.footer-ppl p {
+  font-size: 1.2rem;
+}
+/* pagina de parques*/
+.bg-parques {
+  background-image: url(../img/img-parques-graffiti.jpeg);
+  background-repeat: no-repeat;
   background-size: cover;
-  z-index: 0;
-  opacity: 0;  -webkit-filter: blur(4px);
+  height: 500px;
+  position: relative; 
 }
-.img{
-  margin-right:20px
+.ctn-bg-parques {    
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
 }
-.site {
-  padding: 20em 0;
-  text-align: center;
-  background-color: #efefef;
-  font-size: .8em;
-  color: #444;
-  position:relative
-}
-.site a {
-  color: #666;
+.nav-parques {
+  background-color: rgb(252, 114, 2);
   text-decoration: none;
 }
-.site a:hover {
-  color: #222;
+.nav-ppl a:hover {
+  color: rgb(255, 94, 0);
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 40%;
+      margin: auto;
+  }
+
+
+/* pagina Daniel*/
+
+.hero2 {
+  background-image: url(../img/Museo-inicio.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  position: relative; 
+}
+@media (min-width: 768px) {
+.ctn-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+}
+.ctn-img p {
+  line-height: 2;
+  text-align: center;
+  font-family: var(--fuenteparrafos);
+}
+.btn-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primario);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-left: 25%;
+  margin-right: 25%;  
+  
+}
+.btn-img a {
+  color: var(--blanco);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
+.footer-basic li {
+  padding:0 10px;
 }
 
 .site nav{
@@ -259,50 +293,4 @@ p {
 
   /*página rios y cascadas*/
 
- .enryc{
-  background-image: url(../img/imagen1ryc.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 500px;
-  position: relative; 
-  color: #fff;
-  text-align: center;
-  }
-
-  .introryc{
-    padding: 100px 0;
-    background-color: white;
-    position: relative;
-  }
-
-  .cont1ryc{
-    text-align: center;
-    line-height: 20px;
-    color: black;
-    }
-
-    .ryc-group{
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 50px;
-      padding: 1rem;
-    }
-
-    .ryc-1{
-      padding: 0 25px;
-    }
-    
-    .ryc-1 img{
-      display: block;
-      width: 150px;
-      height: 150px;
-      object-position: center;
-      margin: auto;
-      border-radius: 40%;
-    }
-.ryc-1 h3{
-  margin-bottom: 15px;
-}
-
-
-
+ 
