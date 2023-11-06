@@ -230,6 +230,20 @@ p {
 
 /* pagina Daniel*/
 
+.bodymmuseos{
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  background-color: #F6DDCC;
+}
+
+.nav-museos{
+  background-color: #922B21  ;
+}
+.nav-museos a:hover{
+  color: #d6670d;
+
+}
+
 .hero2 {
   background-image: url(../img/Museo-inicio.png);
   background-repeat: no-repeat;
@@ -237,23 +251,12 @@ p {
   height: 500px;
   position: relative; 
 }
-@media (min-width: 768px) {
-.ctn-img {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
- }
-}
-.ctn-img p {
-  line-height: 2;
-  text-align: center;
-  font-family: var(--fuenteparrafos);
-}
+
 .btn-img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--primario);
+  background-color: #922B21;
   padding: 1rem;
   border-radius: 1rem;
   margin-left: 25%;
@@ -265,43 +268,24 @@ p {
   text-decoration: none;
   text-transform: uppercase;
 }
-
-
-.footer-basic li {
-  padding:0 10px;
-}
-
-.site nav{
-  position:absolute;
-	overflow: hidden;
-  top:0;
-  left:0;
-  background:#222;
-  width:100%
-}
-.site nav a{
-  padding:10px 30px;
-  font-size:1.3em;
-  display:inline-block
-}
-.site nav a:hover{
-  background:#58ca74;
-  color:#fff
-}
-.slider {
-    display: flex;
-    width: auto;
-    height: auto;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-  }
+.footer-mus {
+  background-color: #922B21;
+  padding: 1rem;
+  margin-top: 8rem;
+  color: var(--blanco);
+  text-transform: uppercase;
   
-  .slider  {
-    flex: 0 0 auto;
-    width: auto;
-    object-fit: cover;
-    scroll-snap-align: center;
-  }
+}
+.summary {
+  color: rgb(57, 45, 233);
+}
+.lista {
+  text-align: left;
+  margin: 0 auto;
+  width: 50%;
+}
+
+
 
   /*página rios y cascadas*/
   .enryc{
