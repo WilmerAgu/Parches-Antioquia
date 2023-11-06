@@ -5,23 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parques</title>
     <script src="./indexyparques.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/style.css">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
+
 <body>
     <section class="hero bg-parques">
         <div class="contenido-hero ctn-bg-parques">
-          <img src="./img/graffti-parques.png" alt="" width="600px">
+          <img src="./img/parques/graffti-parques.png" alt="" width="600px" style="max-width: 100%;">
         </div>
       </section>
 
     <div class="nav-bg nav-parques">
-        <nav class="nav-ppl">
+        <nav class="nav-ppl nav-par">
             <a href="/index.html">Inicio</a>
             <a href="">Centros Comerciales</a>
             <a href="/miradores.html">Miradores</a>
@@ -32,7 +31,7 @@
         </nav>
     </div>
 
-    <main class="container">
+    <main>
         <div class="container">
             <br>
             <div id="theCarousel" class="carousel slide" data-ride="carousel">
@@ -47,34 +46,32 @@
 
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                        <img src="/img/cascada1.png" alt="Ilustracion" width="400px" height="224px">
+                        <img src="./img/parques/parque-arvi-1.jpg" alt="Ilustracion" width="400px" height="224px">
                         <div class="carousel-caption d-none d-md-block">
-                            <h3>Parques Antioquia</h3>
+                            <h3>Parque Arví</h3>
                         </div>
                     </div>
 
                     <div class="item">
-                        <img src="./img/parqueppl.jpg" alt="fotografia" width="400px" height="224px">
+                        <img src="./img/parques/img-parques-graffiti.jpeg" alt="fotografia" width="400px" height="224px">
                         <div class="carousel-caption d-none d-md-block">
-                            <h3> Xataka Fotografía</h3>
+                            <h3>Hacienda Napoles</h3>
 
                         </div>
                     </div>
 
                     <div class="item">
-                        <img src="./img/cascadappl.jpg" alt="pintura" width="400px" height="224px">
+                        <img src="./img/parques/parque-explora.jpg" alt="pintura" width="400px" height="224px">
                         <div class="carousel-caption d-none d-md-block">
-                            <h3>DoArt Pintura</h3>
+                            <h3>Parque Explora</h3>
                         </div>
                     </div>
                     <div class="item">
-                        <img src="./img/cascada1.avif" alt="diseno" width="400px" height="224px">
+                        <img src="./img/parques/piedra-del-peñol-1.jpg" alt="diseno" width="400px" height="224px">
                         <div class="carousel-caption d-none d-md-block">
-                            <h3>UX UI Diseño Gráfico</h3>
+                            <h3>La Piedra del Peñol</h3>
                         </div>
                     </div>
-
-
                     <a class="left carousel-control" href="#theCarousel" role="button" data-slide="prev">
                         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                         <span class="sr-only">anterior</span>
@@ -86,7 +83,31 @@
                 </div>
             </div>
         </div>
+        <section class="container">
+            <h2>Parque Explora</h2>
+            <div class="text-explora container-parques">
+                <img src="./img/parques/parque-explora1.png" alt="p-eplorar" width="600px" style="max-width: 100%;">
+                <p>Explora: un museo interactivo de ciencias, un planetario, un acuario de educación y conservación 
+                y un taller público de experimentación
+                Con todos los atributos de un parque de árboles nativos, y en medio de los barrios obreros de Medellín, 
+                Colombia, flotan las cuatro cajas rojas del Parque Explora, un museo interactivo de ciencias, 
+                un planetario, un acuario con énfasis amazónico y un taller público de experimentación: Exploratorio.
+                Está ubicado en la zona norte de la ciudad, que albergaba el antiguo basurero y que pasó del estigma a ser hoy un vigoroso lugar de encuentro social y un símbolo de transformación social desde la educación.
+                <br>
+                El Parque tiene más de 300 experiencias interactivas para la apropiación social del conocimiento 
+                científico y tecnológico. Cuenta con exposiciones sobre neurociencias, música, tiempo, historias y medios de 
+                comunicaciónque han permitido contarlas. <br>
+                El Acuario con énfasis amazónico y el Vivario son espacios de educación, conservación e investigación 
+                de la diversidad que promueven una nueva ética de la vitalidad. Protegemos más de dos mil individuos,
+                 muchos de ellos rescatados de tráfico de especies y tenencias irregulares. Estos seres frágiles, 
+                 son cuidados con los más altos estándares de bienestar y su esplendor en riesgo nos recuerda que no 
+                 estamos solos, que nuestro destino es común y que es preciso conocer y respetar no solo lo que se nos 
+                 parece.
+            </p>
+            </div>
+        </section>
         
+
 
     </main>
     <script src="./indexyparques.js"></script>

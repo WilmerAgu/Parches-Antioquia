@@ -49,6 +49,7 @@ p {
     background-size: cover;
     height: 500px;
     position: relative; 
+    max-width: 100%;
     
 }
 .contenido-hero {
@@ -189,11 +190,12 @@ p {
 }
 /* pagina de parques*/
 .bg-parques {
-  background-image: url(../img/img-parques-graffiti.jpeg);
+  background-image: url(../img/parques/img-parques-graffiti.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
-  position: relative; 
+  position: relative;
+  max-width: 100%; 
 }
 .ctn-bg-parques {    
   position: absolute;
@@ -203,7 +205,7 @@ p {
   background-color: rgb(252, 114, 2);
   text-decoration: none;
 }
-.nav-ppl a:hover {
+.nav-par a:hover {
   color: rgb(255, 94, 0);
   border-radius: 25px;
   text-decoration: none;
@@ -213,7 +215,17 @@ p {
   .carousel-inner > .item > a > img {
       width: 40%;
       margin: auto;
-  }
+}
+
+.container-parques {
+    display: flex;
+}
+
+.text-explora {
+    flex: 1; /* Ocupa todo el espacio disponible */
+    padding: 20px; /* Espaciado entre el texto y la imagen */
+}
+
 
 
 /* pagina Daniel*/
