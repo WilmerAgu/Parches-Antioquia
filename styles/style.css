@@ -1,6 +1,7 @@
 :root {
     --primario: #038033;
     --blanco: #ffffff;
+    --naranja:  rgb(255, 94, 0);
     --fuentetitulos:'Young Serif', serif; 
     --fuenteparrafos: 'Raleway', sans-serif; 
     
@@ -202,7 +203,7 @@ p {
   background-color: rgba(0, 0, 0, 0.5);
 }
 .nav-parques {
-  background-color: rgb(252, 114, 2);
+  background-color: var(--naranja);
   text-decoration: none;
 }
 .nav-par a:hover {
@@ -225,7 +226,23 @@ p {
     flex: 1; /* Ocupa todo el espacio disponible */
     padding: 20px; /* Espaciado entre el texto y la imagen */
 }
-
+#btn-modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-modal {
+  background-color: var(--naranja);
+  color: var(--blanco);
+  border-radius: 1rem;
+  border: none;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.7);
+}
 
 
 /* pagina Daniel*/
