@@ -17,7 +17,7 @@
         <div class="contenido-hero ctn-bg-parques">
           <img src="./img/parques/graffti-parques.png" alt="" width="600px" style="max-width: 100%;">
         </div>
-      </section>
+    </section>
 
     <div class="nav-bg nav-parques">
         <nav class="nav-ppl nav-par">
@@ -41,7 +41,6 @@
                     <li data-target="#theCarousel" data-slide-to="1"></li>
                     <li data-target="#theCarousel" data-slide-to="2"></li>
                     <li data-target="#theCarousel" data-slide-to="3"></li>
-
                 </ol>
 
                 <div class="carousel-inner" role="listbox">
@@ -83,6 +82,7 @@
                 </div>
             </div>
         </div>
+
         <section class="container">
             <h2>Parque Explora</h2>
             <div class="text-explora container-parques">
@@ -106,8 +106,8 @@
             </p>
             </div>
             <div id="btn-modal">
-                <button class="btn-modal" onclick="window.modal.showModal();">imagenes</button>
-                    <dialog id="modal" class="img-modal">
+                <button class="btn-modal" onclick="openExploraModal();">imagenes</button>
+                    <dialog id="modal-explora" class="img-modal">
                         <img src="./img/parques/parque-explora1.png" alt="" width="300" style="max-width: 100%;">
                         <img src="./img/parques/parque-explora2.png" alt="" width="300" style="max-width: 100%;">
                         <img src="./img/parques/parque-explora3.png" alt="" width="300" style="max-width: 100%;">
@@ -116,9 +116,45 @@
                         <img src="./img/parques/parque-explora6.png" alt="" width="300" style="max-width: 100%;">
                         <img src="./img/parques/parque-explora7.png" alt="" width="300" style="max-width: 100%;">
                         <img src="./img/parques/parque-explora8.png" alt="" width="300" style="max-width: 100%;">
-                    <button class="btn-modal" onclick="window.modal.close();">Cerrar</button>
+                    <button class="btn-modal" onclick="closeModal();">Cerrar</button>
                 </dialog>
             </div>
+        </section>
+        
+        <section class="container">
+            <h2>La Piedra del Peñol</h2>
+            <div class="text-explora container-parques">
+                <img src="./img/parques/el-peñol1.jpg" alt="p-eplorar" width="600px" style="max-width: 100%;">
+                <p>Uno de los atractivos turísticos más importantes para visitar es “La piedra del Peñol”. 
+                Es un monolito de 220 metros de altura ubicado entre los municipios de Guatapé y cuenta 
+                con 702 escalones hasta la cima. <br>
+                Una maravilla de la naturaleza, desde donde se puede ver la panorámica del embalse de más de 2.200
+                hectáreas de extensión, que consta de varias islas en tonos verdes rodeadas de aguas tranquilas que invitan 
+                a la contemplación y al descanso. Desde allí se observa la antigua ubicación del pueblo, puesto que se ha 
+                ubicado una cruz que emerge del agua y sirve de símbolo histórico.
+                <br>
+                La cercanía al embalse da a los visitantes la posibilidad de realizar deportes acuáticos, mientras que la vegetación 
+                de bosque que rodea el municipio permite que actividades como el senderismo, el ciclo montañismo y las cabalgatas 
+                sean muy populares. Guatapé es un destino hermoso y entretenido, ideal para visitar en cualquier época del año. <br>
+                Uno de los atractivos turísticos más importantes para visitar es El Peñón de Guatapé, conocido también como 
+                “La piedra del Peñol”. Es un monolito de 220 metros de altura ubicado entre los municipios de Guatapé y El Peñol, 
+                que cuenta con 702 escalones hasta la cima.                 
+            </p>
+            </div>
+            <div id="btn-modal">
+                <button class="btn-modal" onclick="openPeñolModal();">imagenes</button>
+                    <dialog id="modal-peñol" class="img-modal">
+                        <img src="./img/parques/el-peñol2.jpg" alt="" width="300" style="max-width: 100%;">
+                        <img src="./img/parques/el-peñol1.jpg" alt="" width="300" style="max-width: 100%;">
+                        <img src="./img/parques/el-peñol3.jpg" alt="" width="300" style="max-width: 100%;">
+                        <img src="./img/parques/el-peñol4.jpg" alt="" width="300" style="max-width: 100%;">
+                        <img src="./img/parques/el-peñol5.jpg" alt="" width="300" style="max-width: 100%;">
+                        <img src="./img/parques/el-peñol6.jpg" alt="" width="300" style="max-width: 100%;">
+                        <img src="./img/parques/el-peñol7.jpg" alt="" width="300" style="max-width: 100%;">
+                        <img src="./img/parques/el-peñol8.jpg" alt="" width="300" style="max-width: 100%;">
+                    <button id="modal" class="btn-modal" onclick="closeModal();">Cerrar</button>
+                </dialog>
+            </div>       
         </section>
 
 

@@ -29,6 +29,32 @@ document.addEventListener("DOMContentLoaded", function() {
     setInterval(nextSlide, 3000); // Cambia de imagen cada 3 segundos
 });
 
+// modal
+
+    function openExploraModal() {
+        const modal = document.getElementById("modal-explora");
+        modal.showModal();
+    }
+   
+
+    function openPeñolModal() {
+        const modal = document.getElementById("modal-peñol");
+        modal.showModal();
+    }
+    function closeModal() {
+        const modalexplora = document.getElementById("modal-explora");
+        const openPeñolModal = document.getElementById("modal-peñol");
+        
+        if (modalexplora.open) {
+            modalexplora.close();
+        }
+
+        if (openPeñolModal.open) {
+            openPeñolModal.close();
+        }
+    }
+
+
 
 
 
