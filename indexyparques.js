@@ -36,14 +36,18 @@ document.addEventListener("DOMContentLoaded", function() {
         modal.showModal();
     }
    
-
     function openPeñolModal() {
         const modal = document.getElementById("modal-peñol");
+        modal.showModal();
+    }
+    function openNapolesModal() {
+        const modal = document.getElementById("modal-napoles");
         modal.showModal();
     }
     function closeModal() {
         const modalexplora = document.getElementById("modal-explora");
         const openPeñolModal = document.getElementById("modal-peñol");
+        const openNapolesModal = document.getElementById("modal-napoles");
         
         if (modalexplora.open) {
             modalexplora.close();
@@ -51,6 +55,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (openPeñolModal.open) {
             openPeñolModal.close();
+        }
+        if (openNapolesModal.open) {
+            openNapolesModal.close();
         }
     }
 
