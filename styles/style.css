@@ -264,10 +264,14 @@ p {
   }
 }
 
-#btn-modal {
+.botones-modal {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-around;
+  margin: 20px; /* Ajusta el margen según sea necesario */
+}
+
+.botones-modal  {
+  padding: 1rem; /* Ajusta el padding según sea necesario */
 }
 dialog::backdrop {
   background: rgba(0, 0, 0, 0.8);
@@ -280,8 +284,7 @@ dialog::backdrop {
   padding: 1rem 2rem;
   text-transform: uppercase;
   font-weight: 700;
-  margin-top: 2rem;
-  margin-bottom: 5rem;
+
 }
 .btn-modal-cerrar {
   background-color:red;

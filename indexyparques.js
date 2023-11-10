@@ -24,19 +24,34 @@
         const modal = document.getElementById("modal-explora");
         modal.showModal();
     }
+    function openUbicacionExploraModal() {
+        const modal = document.getElementById("modal-ubicacion-explora");
+        modal.showModal();
+    }
    
     function openPeñolModal() {
         const modal = document.getElementById("modal-peñol");
+        modal.showModal();
+    }
+    function openUbicacionPeñolModal() {
+        const modal = document.getElementById("modal-ubicacion-peñol");
         modal.showModal();
     }
     function openNapolesModal() {
         const modal = document.getElementById("modal-napoles");
         modal.showModal();
     }
+    function openUbicacionNapolesModal() {
+        const modal = document.getElementById("modal-ubicacion-napoles");
+        modal.showModal();
+    }
     function closeModal() {
         const modalexplora = document.getElementById("modal-explora");
+        const openUbicacionExploraModal = document.getElementById("modal-ubicacion-explora");
         const openPeñolModal = document.getElementById("modal-peñol");
+        const openUbicacionPeñolModal = document.getElementById("modal-ubicacion-peñol");
         const openNapolesModal = document.getElementById("modal-napoles");
+        const openUbicacionNapolesModal = document.getElementById("modal-ubicacion-napoles");
         
         if (modalexplora.open) {
             modalexplora.close();
@@ -47,6 +62,15 @@
         }
         if (openNapolesModal.open) {
             openNapolesModal.close();
+        }
+        if (openUbicacionExploraModal.open) {
+            openUbicacionExploraModal.close();
+        }
+        if (openUbicacionPeñolModal.open) {
+            openUbicacionPeñolModal.close();
+        }
+        if (openUbicacionNapolesModal.open) {
+            openUbicacionNapolesModal.close();
         }
     }
 

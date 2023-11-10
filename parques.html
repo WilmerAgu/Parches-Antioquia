@@ -104,19 +104,28 @@
                     parece.
                 </p>
                 </div>
-                <div id="btn-modal">
-                    <button class="btn-modal-abrir" onclick="openExploraModal();">imagenes</button>
-                        <dialog id="modal-explora" class="img-modal">
-                            <img src="./img/parques/parque-explora1.png" alt="" width="300" style="max-width: 100%;">
-                            <img src="./img/parques/parque-explora2.png" alt="" width="300" style="max-width: 100%;">
-                            <img src="./img/parques/parque-explora3.png" alt="" width="300" style="max-width: 100%;">
-                            <img src="./img/parques/parque-explora4.png" alt="" width="300" style="max-width: 100%;">
-                            <img src="./img/parques/parque-explora5.png" alt="" width="300" style="max-width: 100%;">
-                            <img src="./img/parques/parque-explora6.png" alt="" width="300" style="max-width: 100%;">
-                            <img src="./img/parques/parque-explora7.png" alt="" width="300" style="max-width: 100%;">
-                            <img src="./img/parques/parque-explora8.png" alt="" width="300" style="max-width: 100%;">
-                        <button class="btn-modal-cerrar" onclick="closeModal();">Cerrar</button>
-                    </dialog>
+                <div class="botones-modal">
+                    <div id="btn-modal" class="btn-modal">
+                        <button class="btn-modal-abrir" onclick="openExploraModal();">imagenes</button>
+                            <dialog id="modal-explora" class="img-modal">
+                                <img src="./img/parques/parque-explora1.png" alt="" width="300" style="max-width: 100%;">
+                                <img src="./img/parques/parque-explora2.png" alt="" width="300" style="max-width: 100%;">
+                                <img src="./img/parques/parque-explora3.png" alt="" width="300" style="max-width: 100%;">
+                                <img src="./img/parques/parque-explora4.png" alt="" width="300" style="max-width: 100%;">
+                                <img src="./img/parques/parque-explora5.png" alt="" width="300" style="max-width: 100%;">
+                                <img src="./img/parques/parque-explora6.png" alt="" width="300" style="max-width: 100%;">
+                                <img src="./img/parques/parque-explora7.png" alt="" width="300" style="max-width: 100%;">
+                                <img src="./img/parques/parque-explora8.png" alt="" width="300" style="max-width: 100%;">
+                            <button class="btn-modal-cerrar" onclick="closeModal();">Cerrar</button>
+                        </dialog>
+                    </div>
+                    <div id="btn-modal" class="btn-modal">
+                        <button class="btn-modal-abrir" onclick="openUbicacionExploraModal();">ubicacion</button>
+                            <dialog id="modal-ubicacion-explora" class="img-modal">
+                                <iframe style="max-width: 100%;"  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4642.615386682385!2d-75.56675678036449!3d6.2708270270520465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sco!4v1699623371106!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <button class="btn-modal-cerrar" onclick="closeModal();">Cerrar</button>
+                        </dialog>
+                    </div>
                 </div>
             </section>
         
@@ -140,20 +149,29 @@
                     </p>
                     <img src="./img/parques/el-peñol1.jpg" alt="p-eplorar" width="600px" style="max-width: 100%;margin-left: 20px;">
                 </div>
-                <div id="btn-modal">
-                    <button class="btn-modal-abrir" onclick="openPeñolModal();">imagenes</button>
-                        <dialog id="modal-peñol" class="img-modal">
-                            <img src="./img/parques/el-peñol2.jpg" alt="" width="300" style="max-width: 100%;">
-                            <img src="./img/parques/el-peñol1.jpg" alt="" width="300" style="max-width: 100%;">
-                            <img src="./img/parques/el-peñol3.jpg" alt="" width="300" style="max-width: 100%;">
-                            <img src="./img/parques/el-peñol4.jpg" alt="" width="300" style="max-width: 100%;">
-                            <img src="./img/parques/el-peñol5.jpg" alt="" width="300" style="max-width: 100%;">
-                            <img src="./img/parques/el-peñol6.jpg" alt="" width="300" style="max-width: 100%;">
-                            <img src="./img/parques/el-peñol7.jpg" alt="" width="300" style="max-width: 100%;">
-                            <img src="./img/parques/el-peñol8.jpg" alt="" width="300" style="max-width: 100%;">
-                        <button id="modal" class="btn-modal-cerrar" onclick="closeModal();">Cerrar</button>
-                    </dialog>
-                </div>       
+                <div class="botones-modal">
+                    <div id="btn-modal" class="btn-modal">
+                        <button class="btn-modal-abrir" onclick="openUbicacionPeñolModal();">ubicacion</button>
+                            <dialog id="modal-ubicacion-peñol" class="img-modal">
+                                <iframe style="max-width: 100%;" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5629.25966780918!2d-75.18081424337677!3d6.223579790186508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses-419!2sco!4v1699644397937!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <button class="btn-modal-cerrar" onclick="closeModal();">Cerrar</button>
+                        </dialog>
+                    </div>     
+                    <div id="btn-modal">
+                        <button class="btn-modal-abrir" onclick="openPeñolModal();">imagenes</button>
+                            <dialog id="modal-peñol" class="img-modal">
+                                <img src="./img/parques/el-peñol2.jpg" alt="" width="300" style="max-width: 100%;">
+                                <img src="./img/parques/el-peñol1.jpg" alt="" width="300" style="max-width: 100%;">
+                                <img src="./img/parques/el-peñol3.jpg" alt="" width="300" style="max-width: 100%;">
+                                <img src="./img/parques/el-peñol4.jpg" alt="" width="300" style="max-width: 100%;">
+                                <img src="./img/parques/el-peñol5.jpg" alt="" width="300" style="max-width: 100%;">
+                                <img src="./img/parques/el-peñol6.jpg" alt="" width="300" style="max-width: 100%;">
+                                <img src="./img/parques/el-peñol7.jpg" alt="" width="300" style="max-width: 100%;">
+                                <img src="./img/parques/el-peñol8.jpg" alt="" width="300" style="max-width: 100%;">
+                            <button id="modal" class="btn-modal-cerrar" onclick="closeModal();">Cerrar</button>
+                        </dialog>
+                    </div> 
+                </div>
             </section>           
        
         <section>
@@ -176,21 +194,30 @@
                 que cuenta con 702 escalones hasta la cima.                 
             </p>
             </div>
-            <div id="btn-modal">
-                <button class="btn-modal-abrir" onclick="openNapolesModal();">imagenes</button>
-                    <dialog id="modal-napoles" class="img-modal">
-                        <img src="./img/parques/hacienda-napoles1.webp" alt="" width="300" style="max-width: 100%;">
-                        <img src="./img/parques/hacienda-napoles2.webp" alt="" width="300" style="max-width: 100%;">
-                        <img src="./img/parques/hacienda-napoles3.webp" alt="" width="300" style="max-width: 100%;">
-                        <img src="./img/parques/hacienda-napoles4.webp" alt="" width="300" style="max-width: 100%;">
-                        <img src="./img/parques/hacienda-napoles5.webp" alt="" width="300" style="max-width: 100%;">
-                        <img src="./img/parques/hacienda-napoles6.webp" alt="" width="300" style="max-width: 100%;">
-                        <img src="./img/parques/hacienda-napoles7.webp" alt="" width="300" style="max-width: 100%;">
-                        <img src="./img/parques/hacienda-napoles8.webp" alt="" width="300" style="max-width: 100%;">
-                       
-                    <button id="modal" class="btn-modal-cerrar" onclick="closeModal();">cerrar</button>
-                </dialog>
-            </div>       
+            <div class="botones-modal">
+                <div id="btn-modal">
+                    <button class="btn-modal-abrir" onclick="openNapolesModal();">imagenes</button>
+                        <dialog id="modal-napoles" class="img-modal">
+                            <img src="./img/parques/hacienda-napoles1.webp" alt="" width="300" style="max-width: 100%;">
+                            <img src="./img/parques/hacienda-napoles2.webp" alt="" width="300" style="max-width: 100%;">
+                            <img src="./img/parques/hacienda-napoles3.webp" alt="" width="300" style="max-width: 100%;">
+                            <img src="./img/parques/hacienda-napoles4.webp" alt="" width="300" style="max-width: 100%;">
+                            <img src="./img/parques/hacienda-napoles5.webp" alt="" width="300" style="max-width: 100%;">
+                            <img src="./img/parques/hacienda-napoles6.webp" alt="" width="300" style="max-width: 100%;">
+                            <img src="./img/parques/hacienda-napoles7.webp" alt="" width="300" style="max-width: 100%;">
+                            <img src="./img/parques/hacienda-napoles8.webp" alt="" width="300" style="max-width: 100%;">
+                           
+                        <button id="modal" class="btn-modal-cerrar" onclick="closeModal();">cerrar</button>
+                    </dialog>
+                </div>  
+                <div id="btn-modal" class="btn-modal">
+                    <button class="btn-modal-abrir" onclick="openUbicacionNapolesModal();">ubicacion</button>
+                        <dialog id="modal-ubicacion-napoles" class="img-modal">
+                            <iframe style="max-width: 100%;"  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d4377.701630823772!2d-74.72747219222252!3d5.900190862209778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1ses-419!2sco!4v1699644663776!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <button class="btn-modal-cerrar" onclick="closeModal();">Cerrar</button>
+                    </dialog>
+                </div>       
+            </div>
         </section>
     </div>
 
