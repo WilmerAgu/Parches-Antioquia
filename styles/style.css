@@ -266,7 +266,7 @@ p {
 
 .botones-modal {
   display: flex;
-  justify-content: space-around;
+  justify-content:center;
   margin: 20px; /* Ajusta el margen según sea necesario */
 }
 
@@ -284,7 +284,7 @@ dialog::backdrop {
   padding: 1rem 2rem;
   text-transform: uppercase;
   font-weight: 700;
-
+  margin-left: 2rem;
 }
 .btn-modal-cerrar {
   background-color:red;
