@@ -360,7 +360,7 @@ dialog::backdrop {
 
   /*página rios y cascadas*/
   .enryc{
-    background-image: url(../img/imagen1ryc.jpg);
+    background-image: url(../img/riosycascadas/imagen1ryc.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
@@ -379,6 +379,8 @@ dialog::backdrop {
       text-align: center;
       line-height: 20px;
       color: black;
+      align-items: flex-end;
+      justify-content: center;
       }
   
       .ryc-group{
@@ -404,4 +406,55 @@ dialog::backdrop {
     margin-bottom: 15px;
   }
   
+ .introryc p{
+  text-align: justify;
+ }
+
+ .introryc h2{
+  text-align: center;
+ }
+
+ .btrc{
+  background: #fff;
+  color: #008EEB;
+  text-align: center;
+  justify-content: center;
+  border: 2px solid #008EEB;
+  padding: 16px 20px;
+  border-radius: 30px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+  text-decoration: none;
+  margin-left: 27%;
+  }
+
+  .btrc:hover{
+    color: #fff;
+  }
+
+  .btrc::after{
+    content: "";
+    background: #008EEB;
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transform: scale(0,0);
+    transition: all0.3s ease;
+  }
+
+  .btrc:hover::after{
+    transition: all 0.3s ease-out;
+    transform: scale(1, 1);
+  }
+.ryc{
+  background-color: #008EEB;
+}
+
  
